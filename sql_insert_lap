@@ -1,0 +1,4 @@
+INSERT INTO "Country" (id, name_country)VALUES
+(61,'Canada'),
+(62,'Mexico'),
+(63,'USA');
