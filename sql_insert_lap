@@ -1,5 +1,51 @@
-
 INSERT INTO "Country" (id, name_country)VALUES
 (61,'Canada'),
 (62,'Mexico'),
 (63,'USA');
+
+INSERT INTO "City"(id, name_city, id_country) VALUES
+(61, 'Toronto', 61),
+(62, 'Vancouver', 61),
+(63, 'Ottawa', 61),
+(64, 'Edmonton', 61),
+(65, 'Regina', 61),
+(66, 'Winnipeg', 61),
+(67, 'Guadalajara', 62),
+(68, 'Mexico', 62),
+(69, 'Colima', 62),
+(70, 'Morelia', 62),
+(71, 'Pachuca', 62),
+(72, 'Chicago', 63),
+(73, 'Los Angeles', 63),
+(74, 'New York', 63),
+(75, 'Dallas', 63),
+(76, 'San Francisco', 63),
+(77, 'Boston', 63),
+(78, 'Las Vegas', 63),
+(79, 'Miami', 63),
+(80, 'New Orleans', 63);
+
+INSERT INTO "Customer"(id, f_name_customer, l_name_customer, id_city) VALUES
+(61, 'Adam', 'Mitch', 72),
+(62, 'Iva', 'Mackenzi', 73),
+(63, 'Jennifer', 'Lopes', 74),
+(64, 'Amanda', 'Selfard', 75),
+(65, 'Aleksander', 'Chaned', 76),
+(66, 'Kate', 'Radison', 77),
+(67, 'Alison', 'Nice', 78),
+(68, 'Hose', 'Amomio', 71),
+(69, 'Alehandro', 'Jose', 67),
+(70, 'Miguel', 'Angelo', 69),
+(71, 'Juan', 'Luis', 68),
+(72, 'Maria', 'Carmen', 70),
+(73, 'Tom', 'Hardy', 79),
+(74, 'Jastin', 'Biber', 80),
+(75, 'Logan', 'Bruno', 66),
+(76, 'Jacob ', 'Smith', 65),
+(77, 'Thomas', 'Brodie', 64),
+(78, 'Olivia', 'Noah', 63),
+(79, 'Isabella ', 'James', 62),
+(80, 'Mia', 'Mason', 61);
+
+INSERT INTO "Category"(id, name_category) VALUES 
+(3, 'Cosmetics');
