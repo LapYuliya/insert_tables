@@ -49,3 +49,37 @@ INSERT INTO "Customer"(id, f_name_customer, l_name_customer, id_city) VALUES
 
 INSERT INTO "Category"(id, name_category) VALUES 
 (3, 'Cosmetics');
+
+INSERT INTO "Producer"(id, name_producer, id_country) VALUES 
+(61, 'Viktoria Secret', 63),
+(62, 'Revlon', 63),
+(63, 'L_Oreal', 63),
+(64, 'Ulta', 63),
+(65, 'Rimmel', 63),
+(66, 'Nudestix', 61),
+(67, 'RMS beauty', 61),
+(68, 'Farsali', 61),
+(69, 'Nuance Salma Hayek', 62),
+(70, 'Circa Beauty', 62);
+
+INSERT INTO "Product"(id, name_product, price, id_producer, id_category) VALUES 
+(61, 'Casting Creme ', 130, 63, 3),
+(62, 'Alliance Perfect', 10.99, 63, 3),
+(63, 'Organique Dermo Cream', 74.99, 62, 3),
+(64, 'Proffessional Primer', 36.29, 62, 3),
+(65, 'Shine Lipgloss', 12.59, 61, 3),
+(66, 'Garden Fragrance Lotion', 19.89, 61, 3),
+(67, 'My Biggest Lashes', 10.99, 64, 3),
+(68, 'Liquid Eyeliner', 7.99, 64, 3),
+(69, 'Superstat Matte Lipgloss', 17.32, 65, 3),
+(70, 'Powder Mineral', 7.99, 65, 3),
+(71, 'Sunny Lipstick beach', 2.48, 68, 3),
+(72, 'Truly Natural Lipstick', 12.99, 68, 3),
+(73, 'Super Lustrous Lipstick', 6.99, 66, 3),
+(74, 'TATTOO BROW', 15.14, 66, 3),
+(75, 'Nudies All Over Face', 18.00, 67, 3),
+(76, 'New Bite Lipstick Queen', 29.50, 67, 3),
+(77, 'Addesse Tarte Girlactik', 28.00, 70, 3),
+(78, 'Anti-Aging Cream', 17.98, 69, 3),
+(79, 'Age Glycolic Cream', 15.99, 69, 3),
+(80, 'Full Coverage Foundation', 12.08, 70, 3);
