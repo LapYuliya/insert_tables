@@ -1,0 +1,22 @@
+-- add new column for storing previous price value
+
+ALTER TABLE "Order_product"
+ADD COLUMN history_unit_price numeric ;
+
+-- create trigger function
+
+CREATE OR REPLACE FUNCTION get_historical_price()  RETURNS trigger AS
+$$
+BEGIN
+NEW.history_unit_price := OLD.unit_price;
+RETURN NEW;
+END;
+$$ language plpgsql;
+
+-- create trigger
+
+CREATE TRIGGER historical_price
+  BEFORE INSERT OR UPDATE
+  ON "Order_product"
+  FOR EACH ROW
+  EXECUTE PROCEDURE get_historical_price();

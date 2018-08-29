@@ -1,0 +1,9 @@
+SELECT DISTINCT p.name_product, op.unit_price, op.history_unit_price 
+FROM "Product" p
+left JOIN  "Order_product" op ON p.id = op.id_product 
+ORDER BY p.name_product;
+
+UPDATE "Order_product" SET unit_price = 62534 WHERE id_order = 61;
+
+SELECT first_name, last_name, birth_date FROM "Employee"
+WHERE birth_date <= '1963-12-31';

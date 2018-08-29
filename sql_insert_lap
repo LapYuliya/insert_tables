@@ -84,7 +84,7 @@ INSERT INTO "Product"(id, name_product, price, id_producer, id_category) VALUES
 (79, 'Age Glycolic Cream', 15.99, 69, 3),
 (80, 'Full Coverage Foundation', 12.08, 70, 3);
 
-INSERT INTO "Employee"(id, first_name, last_name, birth_data, hire_date, address, id_city, id_chief, notes) VALUES
+INSERT INTO "Employee"(id, first_name, last_name, birth_date, hire_date, address, id_city, id_chief, notes) VALUES
 (61, 'Ryan', 'Golema', '1962-06-18', '1996-04-13', 'Gloucester Drive 57a', 63, null, 'Yuliya Lapchyk'),
 (62, 'Thomas', 'Lema', '1963-01-10', '1997-08-08', 'Pinewood Crescent 343', 63, 61, 'Yuliya Lapchyk'),
 (63, 'Karine', 'Amber', '1987-07-28', '2011-04-13', 'Rue Dupuis 14', 63, 61, 'Yuliya Lapchyk'),
