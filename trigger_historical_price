@@ -1,7 +1,7 @@
 -- add new column for storing previous price value
 
-ALTER TABLE "Order_product"
-ADD COLUMN history_unit_price numeric ;
+ALTER TABLE "Product"
+ADD COLUMN price numeric ;
 
 -- create trigger function
 
